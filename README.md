@@ -1,10 +1,10 @@
 
 📌 Overview
 This project is written in Kotlin and demonstrates how to extract values from a configuration text that contains different keys and values.
-For example:
-userid, user-123; role admin
-authToken   token-xyz-789
-environment : productionc; expiry: 1672531199
+Example configuration text:
+userid, user-123; role admin  
+authToken   token-xyz-789  
+environment : productionc; expiry: 1672531199  
 
 
 The program searches for a given key (such as role or authToken) and returns the associated value, or null if the key is not found.
@@ -15,7 +15,6 @@ The program searches for a given key (such as role or authToken) and returns the
 - Returns null when the key does not exist.
 
 🖥️ Example Usage
-Main program:
 fun main() {
     val config = """
         userid, user-123; role admin
@@ -28,10 +27,12 @@ fun main() {
     println("hostname = ${extractValue(config, "hostname")}")   // null
 }
 
-📌 Output:
-role = admin
-authToken = token-xyz-789
-hostname = null
+
+
+📌 Output
+role = admin  
+authToken = token-xyz-789  
+hostname = null  
 
 
 
@@ -79,4 +80,6 @@ project-root/
 
 
 
-Would you like me to also add a Future Improvements section (e.g., support for JSON or YAML configs) to make the README more professional?
+
+
+
